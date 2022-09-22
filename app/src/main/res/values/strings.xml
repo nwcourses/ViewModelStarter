@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewModelStarter</string>
+    <string name="go">Go!</string>
+    <string name="filler">Name will appear here</string>
+</resources>

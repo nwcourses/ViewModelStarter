@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">ViewModelStarter</string>
     <string name="go">Go!</string>
-    <string name="filler">Name will appear here</string>
+    <string name="filler">Song will appear here</string>
+    <string name="title">Title</string>
+    <string name="artist">Artist</string>
 </resources>

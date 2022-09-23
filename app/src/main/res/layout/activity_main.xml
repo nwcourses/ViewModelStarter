@@ -6,13 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
+    <TextView
         android:layout_width="0px"
         android:layout_height="wrap_content"
-        android:id="@+id/etName"
+        android:id="@+id/tvTitle"
+        android:text="@string/title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etTitle"/>
+
+    <EditText
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintBottom_toTopOf="@id/tvArtist"/>
+    <TextView
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvArtist"
+        android:text="@string/artist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etTitle"
+        app:layout_constraintBottom_toTopOf="@id/etArtist"/>
+    <EditText
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:id="@+id/etArtist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvArtist"
         app:layout_constraintBottom_toTopOf="@id/btnGo"/>
     <Button
         android:layout_width="0px"
@@ -21,12 +48,13 @@
         android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etName"
+        app:layout_constraintTop_toBottomOf="@id/etArtist"
         app:layout_constraintBottom_toTopOf="@id/tvName"/>
     <TextView
         android:layout_width="0px"
         android:layout_height="0px"
         android:id="@+id/tvName"
+        android:textSize="12pt"
         android:text="@string/filler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
